@@ -29,7 +29,7 @@ const Navbar = () => {
             className="rounded-circle"
           />
           <span className="fw-bold text-uppercase text-dark fs-4">
-            Globanics
+            Globonics
           </span>
         </Link>
 
