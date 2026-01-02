@@ -8,21 +8,38 @@ import Faq from "./Faq";
 import MachineSlider from "./MachineSlider";
 
 const Home = () => {
-  useScrollReveal(); //  activate scroll reveal
+  useScrollReveal(); // activate scroll reveal
 
   return (
     <>
-      {/* ================= HERO SECTION ================= */}
+      {/* ================= HERO IMAGE SLIDER ================= */}
       <div className="home hero">
-        <video
-          className="hero-video"
-          src="/videos/home.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+        {/* Image Slider */}
+        <div className="hero-slider">
+          <div className="hero-track">
+            <img src="/images/hero1.jpeg" alt="Winding Machine 1" />
+            <img src="/images/hero2.jpeg" alt="Winding Machine 2" />
+            <img src="/images/hero3.jpeg" alt="Winding Machine 3" />
+            <img src="/images/hero4.jpeg" alt="Winding Machine 4" />
+            <img src="/images/hero5.jpeg" alt="Winding Machine 5" />
+            <img src="/images/hero6.jpeg" alt="Winding Machine 6" />
+            <img src="/images/hero7.jpeg" alt="Winding Machine 7" />
+            <img src="/images/hero8.jpeg" alt="Winding Machine 8" />
 
+            {/* duplicate images for smooth infinite loop */}
+            <img src="/images/hero1.jpeg" alt="Winding Machine 1" />
+            <img src="/images/hero2.jpeg" alt="Winding Machine 2" />
+            <img src="/images/hero3.jpeg" alt="Winding Machine 3" />
+            <img src="/images/hero4.jpeg" alt="Winding Machine 4" />
+            <img src="/images/hero5.jpeg" alt="Winding Machine 5" />
+            <img src="/images/hero6.jpeg" alt="Winding Machine 6" />
+            <img src="/images/hero7.jpeg" alt="Winding Machine 7" />
+            <img src="/images/hero8.jpeg" alt="Winding Machine 8" />
+
+          </div>
+        </div>
+
+        {/* Overlay Content */}
         <div className="hero-overlay">
           <div className="home-content reveal">
             <h1>
@@ -37,8 +54,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      
 
       {/* ================= PRODUCTS ================= */}
       <div className="reveal">
@@ -68,10 +83,13 @@ const Home = () => {
       <div className="reveal">
         <Withus />
       </div>
-      <MachineSlider/>
 
+      {/* ================= MACHINES SLIDER ================= */}
+      <MachineSlider />
+
+      {/* ================= FAQ ================= */}
       <div className="faq">
-        <Faq/>
+        <Faq />
       </div>
     </>
   );

@@ -14,9 +14,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg fixed-top transition-all ${
-        scrolled ? "bg-white shadow-sm" : "bg-transparent"
-      }`}
+    className={`navbar navbar-expand-lg fixed-top transition-all ${
+  scrolled ? "bg-transparent" : "bg-light bg-opacity-75"
+}`}
+
+
     >
       <div className="container-fluid px-4 px-lg-5">
         {/* BRAND */}
