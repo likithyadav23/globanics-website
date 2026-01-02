@@ -1,0 +1,168 @@
+/* ================= SMOOTH SCROLL ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= TITLE ================= */
+.contact-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 48px;
+  letter-spacing: 0.3px;
+}
+
+/* ================= LAYOUT ================= */
+.reach-wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  padding: 70px 90px;
+  background: var(--bg-main);
+}
+
+/* ================= FORM CONTAINER ================= */
+.requirement-box {
+  padding: 38px;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.requirement-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 26px;
+  line-height: 1.4;
+}
+
+/* 👉 FORM SPACING (IMPORTANT FIX) */
+.requirement-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* space between inputs */
+}
+
+/* ================= INPUT FIELDS ================= */
+.requirement-box input,
+.requirement-box textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.requirement-box input::placeholder,
+.requirement-box textarea::placeholder {
+  color: #9ca3af;
+}
+
+.requirement-box input:focus,
+.requirement-box textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.requirement-box textarea {
+  min-height: 130px;
+  resize: none;
+  line-height: 1.6;
+}
+
+/* ================= SUBMIT BUTTON ================= */
+.submit-btn {
+  margin-top: 8px;
+  padding: 14px;
+  width: 50%;
+  background: blue;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ================= SUCCESS MESSAGE ================= */
+.success-msg {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #15803d;
+}
+
+/* ================= CONTACT DETAILS ================= */
+.reach-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 26px;
+}
+
+.address {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Contact rows */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  color: var(--color-secondary);
+}
+
+/* Icons */
+.icon {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .reach-wrapper {
+    padding: 60px 40px;
+    gap: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reach-wrapper {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+    margin-bottom: 36px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}

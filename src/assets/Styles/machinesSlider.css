@@ -1,0 +1,122 @@
+/* ===============================
+   MACHINES SLIDER – INDUSTRY UI
+================================ */
+
+.machines-section {
+  width: 100%;
+  background: whitesmoke;
+}
+
+
+/* Swiper wrapper */
+.machines-section .swiper {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+/* Individual slide */
+.machine-slide {
+  height: 280px;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Professional card effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+/* Image styling */
+.machine-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.1s ease;
+}
+
+/* Hover effects */
+.machine-slide:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.machine-slide:hover img {
+  transform: scale(1.08);
+}
+
+
+/* ===============================
+   SWIPER NAVIGATION BUTTONS
+================================ */
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 16px;
+  height: 46px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+
+  /* center vertically */
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+/* Arrow icons */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #1e293b;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ✅ Push to extreme edges */
+.swiper-button-prev {
+  left: 0; /* extreme left */
+}
+
+.swiper-button-next {
+  right: 0; /* extreme right */
+}
+
+
+/* ===============================
+   RESPONSIVE ADJUSTMENTS
+================================ */
+
+@media (max-width: 1024px) {
+  .machine-slide {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .machines-section {
+    padding: 60px 6%;
+  }
+
+  .machine-slide {
+    height: 230px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .machine-slide {
+    height: 210px;
+    border-radius: 12px;
+  }
+}

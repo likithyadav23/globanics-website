@@ -1,0 +1,142 @@
+/* Page wrapper */
+.winding-page {
+  padding: 80px 8%;
+  padding-top: 80px; 
+  background-color: #f8fafc;
+}
+
+
+/* Title */
+.winding-page h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #111827;
+  position: relative;
+}
+
+.winding-page h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Subtitle */
+.winding-subtitle {
+  text-align: center;
+  max-width: 760px;
+  margin: 18px auto 50px;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Grid – EXACTLY 3 PER ROW */
+.winding-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Card */
+.winding-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.12);
+
+  /* Entrance animation */
+  opacity: 0;
+  transform: translateY(40px) scale(1);
+  animation: cardFadeUp 0.7s ease forwards;
+
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Image */
+.winding-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background: #f8fafc;
+  padding: 8px;
+  box-sizing: border-box;
+  display: block;
+  justify-content: center;
+}
+
+/* Card title */
+.winding-card h3 {
+  padding: 24px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.winding-card:hover {
+  transform: translateY(-14px) scale(1.08);   /* 🔥 stronger lift */
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.22),
+    0 0 0 5px rgba(168, 169, 169, 0.25);        /* 🔵 glow ring */
+  z-index: 10;
+}
+
+
+/* Stagger animation (one by one) */
+.winding-card:nth-child(1) { animation-delay: 0.1s; }
+.winding-card:nth-child(2) { animation-delay: 0.25s; }
+.winding-card:nth-child(3) { animation-delay: 0.4s; }
+.winding-card:nth-child(4) { animation-delay: 0.55s; }
+.winding-card:nth-child(5) { animation-delay: 0.7s; }
+.winding-card:nth-child(6) { animation-delay: 0.85s; }
+
+/* Animation keyframes */
+@keyframes cardFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .winding-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .winding-card img {
+    height: 260px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .winding-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .winding-page h2 {
+    font-size: 28px;
+  }
+
+  .winding-card img {
+    height: 210px;
+    padding: 12px;
+  }
+
+  .winding-card h3 {
+    padding: 18px;
+  }
+}
+  

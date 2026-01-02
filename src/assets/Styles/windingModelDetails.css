@@ -1,0 +1,141 @@
+/* ================= PAGE ================= */
+.model-page {
+  padding: 50px 8% 90px;
+  background: #f4f6f8; /* neutral industrial gray */
+}
+
+/* ================= TITLE ================= */
+.model-page h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  color: #0f172a;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.model-content {
+  max-width: 1150px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 44px;
+  border: 1px solid #e5e7eb; /* clean border */
+}
+
+/* ================= IMAGE ================= */
+.model-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+  padding: 28px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.model-image img {
+  max-width: 90%;
+  max-height: 480px;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+/* ================= OVERVIEW ================= */
+.model-overview {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #374151;
+  margin-bottom: 34px;
+}
+
+/* ================= SECTION HEADINGS ================= */
+.model-info h3 {
+  margin: 36px 0 16px;
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 600;
+  border-left: 4px solid #2563eb;
+  padding-left: 12px;
+}
+
+/* ================= LISTS ================= */
+.feature-list,
+.config-list {
+  padding-left: 20px;
+  color: #374151;
+}
+
+.feature-list li,
+.config-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+/* ================= SPEC TABLE ================= */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.spec-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 15px;
+}
+
+.spec-table tr:last-child td {
+  border-bottom: none;
+}
+
+.spec-table td:first-child {
+  font-weight: 600;
+  width: 42%;
+  color: #0f172a;
+  background: #f9fafb;
+}
+
+/* ================= PDF BUTTON ================= */
+.pdf-btn {
+  display: inline-block;
+  margin-top: 44px;
+  padding: 16px 34px;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.pdf-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .model-page {
+    padding: 36px 6% 70px;
+  }
+
+  .model-page h2 {
+    font-size: 28px;
+  }
+
+  .model-content {
+    padding: 26px;
+  }
+
+  .model-image img {
+    max-height: 300px;
+  }
+
+  .model-overview {
+    font-size: 15px;
+  }
+}
