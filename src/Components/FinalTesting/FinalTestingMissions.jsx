@@ -15,8 +15,8 @@ const finalTestingModels = [
     img: "/images/finaltest/DP20.JPG"
   },
   {
-    id: "a100",
-    name: "Finished Capacitor Testing System (A 100)",
+    id: "FBCTS50",
+    name: "Finished Capacitor Testing System (FBCTS-50)",
     img: "/images/finaltest/DSC_0736.JPG"
   },
   {

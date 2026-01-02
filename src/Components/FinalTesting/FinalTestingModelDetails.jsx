@@ -43,10 +43,10 @@ const models = {
     ]
   },
 
-  a100: {
-    name: "Finished Capacitor Testing System (A 100)",
+  FBCTS50: {
+    name: "Finished Capacitor Testing System (FBCTS-50)",
     img: "/images/finaltest/DSC_0736.JPG",
-    pdf: "/pdfs/finaltesting/A100.pdf",
+    pdf: "/pdfs/finaltesting/FCBTS50.pdf",
     overview:
       "A 100 performs AC HV, DC Hipot, IR, BDV, capacitance testing with automated sorting for wire and terminal capacitors.",
     features: [
