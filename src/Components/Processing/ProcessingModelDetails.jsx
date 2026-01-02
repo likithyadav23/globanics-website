@@ -98,7 +98,7 @@ const models = {
   },
 
   soldering: {
-    name: "Automatic Capacitor Wire Soldering Machine",
+    name: "Manual Soldering Machine",
     img: "/images/processing/SolderingMachine.jpg",
     pdf: "/pdfs/processing/soldering.pdf",
     overview:
